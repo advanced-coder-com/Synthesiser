@@ -33,3 +33,5 @@ In the `img` directory you can find design picture
 
 Or visit project simulation page  https://www.tinkercad.com/things/c1sZv7bAW0q-synthesiser?sharecode=nXf6HACwNynt6pHcgWL-a_DITeJm03VTdaJplDjduC8
 
+## Notes
+In project is using third part library. Before compiling code on your machine, do not forget to add library from zip file in 'lib' directory 
