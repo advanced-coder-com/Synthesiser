@@ -4,7 +4,7 @@
 
 This is amateur Arduino based project. 
 
-![Chip Front Image](https://github.com/advanced-coder-com/Synthesizer/blob/main/img/Front.jpg)
+![Chip Front Image](https://github.com/advanced-coder-com/Synthesiser/blob/main/img/Front.jpg)
 
 ## How to use
  - Connect with microUsb to 5V charging
