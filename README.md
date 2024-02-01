@@ -22,7 +22,7 @@ See img directory
 ### Circuit Diagram
 In the `img` directory you can find design picture
 
-![Chip Front Image](https://github.com/advanced-coder-com/Synthesizer/blob/main/img/Synthesiser.png)
+![Chip Front Image](https://github.com/advanced-coder-com/Synthesiser/blob/main/img/Synthesiser.png)
 
 
 Or visit project simulation page  https://www.tinkercad.com/things/c1sZv7bAW0q-synthesiser?sharecode=nXf6HACwNynt6pHcgWL-a_DITeJm03VTdaJplDjduC8
