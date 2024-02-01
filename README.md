@@ -20,8 +20,7 @@ Second version is without function button. Instead of it use two right buttons i
 
 ## What this repo contains
 ### Arduino sketch.
- - File `SynthesiserSketch.cpp` is C++ code can be copied to Arduino IDE
- - File `SynthesiserSketch.ino` is Adrduino IDE formatted sketch.
+ - File `SynthesiserSketch/SynthesiserSketch.ino` is Adrduino IDE formatted sketch.
 
 ### Photos of chip without front and back panels
 See img directory
