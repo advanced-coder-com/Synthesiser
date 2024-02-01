@@ -29,12 +29,13 @@ const int OCTAVA = 5;
 
 const int Buzz = 2;
 const int LED = 13;
-const int helpButtonPin = 3;
 
+// Note: row below is using only for version with function button 
+// const int helpButtonPin = 3;
 
 void setup()
 {
-  Serial.begin(57600);
+  // Serial.begin(57600);
   //INPUT
   pinMode(OCT, INPUT);
   pinMode(C, INPUT);
@@ -44,7 +45,9 @@ void setup()
   pinMode(G, INPUT);
   pinMode(A, INPUT);
   pinMode(B, INPUT);
-  pinMode(helpButtonPin, INPUT);
+
+  // Note: row below is using only for version with function button 
+  // pinMode(helpButtonPin, INPUT);
 
   //OUTPUT
   pinMode(Buzz, OUTPUT);
@@ -53,11 +56,18 @@ void setup()
 
 void loop()
 {
-  if(checkPush(helpButtonPin)) {
+  if(isSavedSongsMode()) {
     savedSongsModePlay();
   } else {
     pianoModePlay();
   }
+}
+
+bool isSavedSongsMode()
+{
+  // Note: row below is using only for version with function button 
+  // return checkPush(helpButtonPin);
+  return checkPush(A) && checkPush(B) && checkPush(OCTAVA);
 }
 
 bool checkPush(int pinNumber) 
@@ -122,7 +132,9 @@ void pianoModePlay()
     if(checkPush(OCTAVA)) {
       tone(Buzz,S_A);
     } else {
-      tone(Buzz,F_A);
+      if (!checkPush(B)) {
+        tone(Buzz,F_A);
+      }
     }
     digitalWrite(LED,HIGH);
   }
@@ -132,7 +144,9 @@ void pianoModePlay()
     if(checkPush(OCTAVA)) {
       tone(Buzz,S_B);
     } else {
-      tone(Buzz,F_B);
+      if (!checkPush(A)){
+        tone(Buzz,F_B);
+      }
     }
     digitalWrite(LED,HIGH);
   }
